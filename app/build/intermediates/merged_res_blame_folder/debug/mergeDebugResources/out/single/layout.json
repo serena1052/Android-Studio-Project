@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-3:/layout/activity_main.xml",
+        "source": "com.example.myapplication.app-main-6:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-3:/layout/fragment_add_contract.xml",
+        "source": "com.example.myapplication.app-main-6:/layout/fragment_add_contract.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-3:/layout/fragment_electric.xml",
+        "source": "com.example.myapplication.app-main-6:/layout/fragment_electric.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-3:/layout/fragment_evidence.xml",
+        "source": "com.example.myapplication.app-main-6:/layout/fragment_evidence.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-3:/layout/fragment_home.xml",
+        "source": "com.example.myapplication.app-main-6:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-3:/layout/fragment_noise.xml",
+        "source": "com.example.myapplication.app-main-6:/layout/fragment_noise.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-3:/layout/fragment_remind.xml",
+        "source": "com.example.myapplication.app-main-6:/layout/fragment_remind.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-3:/layout/item_evidence.xml",
+        "source": "com.example.myapplication.app-main-6:/layout/item_evidence.xml"
+    }
+]
