@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nordic_gradient_bg"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tv_noise_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="環境噪音監測"
+        android:textColor="#2C3E50"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_decibel_circle"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        app:cardBackgroundColor="#CCFFFFFF"
+        app:cardCornerRadius="110dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_toggle_noise_service"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_noise_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_current_db"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="45"
+                android:textColor="#2C3E50"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="normal"
+                android:textSize="64sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dB (分貝)"
+                android:textColor="#7F8C8D"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_noise_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="環境狀態：舒適靜音"
+        android:textColor="#2C3E50"
+        app:layout_constraintTop_toBottomOf="@id/card_decibel_circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btn_toggle_noise_service"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:backgroundTint="#2C3E50"
+        android:text="開啟背景採證"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

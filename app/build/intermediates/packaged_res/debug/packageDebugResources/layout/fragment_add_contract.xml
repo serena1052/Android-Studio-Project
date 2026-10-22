@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nordic_gradient_bg"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tv_add_contract_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="配置契約基本資料"
+            android:textColor="#2C3E50"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="房屋合約名稱"
+            android:textColor="#2C3E50"
+            android:layout_marginTop="24dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText"/>
+
+        <EditText
+            android:id="@+id/et_contract_title"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/input_round_bg"
+            android:hint="例如: 元智香格里拉"
+            android:textColorHint="#997F8C8D"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:autofillHints="none"
+            android:textColor="#2C3E50"
+            android:textSize="15sp"
+            android:inputType="text"
+            tools:ignore="LabelFor,RtlSymmetry" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="合約開始日期"
+            android:textColor="#2C3E50"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText"/>
+
+        <EditText
+            android:id="@+id/et_contract_start_date"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/input_round_bg"
+            android:hint="點擊選擇開始日期"
+            android:textColorHint="#997F8C8D"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:inputType="none"
+            android:focusable="false"
+            android:clickable="true"
+            android:autofillHints="none"
+            android:textColor="#2C3E50"
+            android:textSize="15sp"
+            tools:ignore="LabelFor,RtlSymmetry"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="合約結束日期"
+            android:textColor="#2C3E50"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText"/>
+
+        <EditText
+            android:id="@+id/et_contract_end_date"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/input_round_bg"
+            android:hint="點擊選擇結束日期"
+            android:textColorHint="#997F8C8D"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:inputType="none"
+            android:focusable="false"
+            android:clickable="true"
+            android:autofillHints="none"
+            android:textColor="#2C3E50"
+            android:textSize="15sp"
+            tools:ignore="LabelFor,RtlSymmetry"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="每度電費費率"
+            android:textColor="#2C3E50"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/et_electric_rate"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/input_round_bg"
+            android:hint="例如: 5.5"
+            android:textColorHint="#997F8C8D"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:inputType="numberDecimal"
+            android:autofillHints="none"
+            android:textColor="#2C3E50"
+            android:textSize="15sp"
+            tools:ignore="LabelFor,RtlSymmetry"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_save_contract"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#2C3E50"
+            android:text="確認並儲存設定"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="16dp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+</ScrollView>

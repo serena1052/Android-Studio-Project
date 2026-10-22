@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@android:drawable/ic_menu_today"
+        android:title="首頁" />
+
+    <item
+        android:id="@+id/navigation_evidence"
+        android:icon="@android:drawable/ic_menu_gallery"
+        android:title="存證" />
+
+    <item
+        android:id="@+id/navigation_electric"
+        android:icon="@android:drawable/ic_menu_compass"
+        android:title="電費" />
+
+    <item
+        android:id="@+id/navigation_noise"
+        android:icon="@android:drawable/ic_media_play"
+        android:title="噪音" />
+
+    <item
+        android:id="@+id/navigation_repair"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="提醒" />
+
+</menu>
